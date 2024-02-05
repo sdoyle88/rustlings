@@ -25,7 +25,7 @@ jobs:
         run: |
           cargo fmt --all -- --check
   test:
-    if: github.repository != 'sdoyle88/rustlings
+    if: github.repository != 'sdoyle88/rustlings'
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
