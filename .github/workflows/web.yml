@@ -50,6 +50,7 @@ on:
 # Alright, let's do it!
 jobs:
   web:
+    if: github.repository != 'sdoyle88/rustlings
     name: Build and deploy site and docs
     runs-on: ubuntu-latest
     steps:
